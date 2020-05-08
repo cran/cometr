@@ -1,8 +1,8 @@
 # cometr - Comet API for R
 
 [![CRAN version](https://www.r-pkg.org/badges/version/cometr)](https://cran.r-project.org/package=cometr)
-[![Travis build status](https://travis-ci.org/daattali/cometr.svg?branch=master)](https://travis-ci.org/daattali/cometr)
-[![Codecov test coverage](https://codecov.io/gh/daattali/cometr/branch/master/graph/badge.svg)](https://codecov.io/gh/daattali/cometr?branch=master)
+[![Travis build status](https://travis-ci.org/comet-ml/cometr.svg?branch=master)](https://travis-ci.org/comet-ml/cometr)
+[![Codecov test coverage](https://codecov.io/gh/comet-ml/cometr/branch/master/graph/badge.svg)](https://codecov.io/gh/comet-ml/cometr?branch=master)
 
 [Comet](https://www.comet.ml/) is a cloud platform allowing you to track, compare, explain and optimize machine learning experiments and models. If you perform any machine learning in R, you can use the `cometr` R package to create and track Comet experiments. All experiment data is available for retrieval through `cometr` or can be viewed on the [Comet dashboard](https://www.comet.ml/).
 
@@ -20,7 +20,7 @@ To install the latest development version from GitHub:
 
 ```
 install.packages("remotes")
-remotes::install_github("daattali/cometr")
+remotes::install_github("comet-ml/cometr")
 ```
 
 ## One-time setup
@@ -104,7 +104,7 @@ The following table lists all the configuration variables that `cometr` uses. Al
 | `COMET_PROJECT_NAME` | Default project to use in every function that accepts a `project_name` parameter. \*\*\* |
 | `COMET_LOGGING_FILE` | File to store detailed logs poduced by `cometr`. This is mostly useful for troubleshooting. |
 | `COMET_LOGGING_FILE_LEVEL` | If a logging file is provided, set the level of infomation to log. Must be one of "DEBUG", "INFO", "ERROR". |
-| `COMET_API_URL` | Custom Comet API URL, if you have one. |
+| `COMET_URL_OVERRIDE` | Custom Comet API URL, if you have one. |
 
 _\*\*\* If this value is not provided as a configuration variable, it must be provided as an argument to the relevant functions. If a value is provided as an argument directly to the function, that argument takes precedence and the configuration value is ignored._
 
