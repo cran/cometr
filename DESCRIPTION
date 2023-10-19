@@ -1,11 +1,15 @@
 Package: cometr
 Title: 'Comet' API for R
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: c(
     person(given = "Dean",
            family = "Attali",
            role = c("aut"),
            email = "daattali@gmail.com"),
+    person(given = "Doug",
+           family = "Blank",
+           role = c("aut"),
+           email = "doug@comet.com"),
     person(given = "Iaroslav",
            family = "Omelianenko",
            role = c("aut"),
@@ -22,18 +26,20 @@ Description: A convenient 'R' wrapper to the 'Comet' API, which is a cloud
     online dashboard at <https://www.comet.com>.
 URL: https://github.com/comet-ml/cometr
 BugReports: https://github.com/comet-ml/cometr/issues
-Imports: callr, httr, jsonlite, R.utils, R6 (>= 2.4.0), utils, yaml
-Suggests: covr, curl, git2r (>= 0.22.1), httptest, ps, testthat
+Imports: callr, httr, jsonlite, R.utils, R6 (>= 2.4.0), utils, yaml,
+        digest
+Suggests: covr, curl, git2r (>= 0.22.1), httptest, ps, testthat, withr
 Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-10-10 16:09:50 UTC; iaroslavomelianenko
+Packaged: 2023-10-19 11:59:43 UTC; iaroslavomelianenko
 Author: Dean Attali [aut],
+  Doug Blank [aut],
   Iaroslav Omelianenko [aut] (<https://orcid.org/0000-0002-2190-5664>),
   Nimrod Lahav [cre],
   Comet ML, Inc. [cph, fnd]
 Maintainer: Nimrod Lahav <nimrod@comet.com>
 Repository: CRAN
-Date/Publication: 2023-10-10 17:00:11 UTC
+Date/Publication: 2023-10-19 12:10:08 UTC
